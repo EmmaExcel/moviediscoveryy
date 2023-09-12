@@ -11,7 +11,7 @@ export const Landing = () => {
   useEffect(() => {
     const fetchRandomMovie = async () => {
       try {
-        const apiKey = "9e0c3276e2e68fecfe2ff22674628959"; // Replace with your actual TMDB API key
+        const apiKey = import.meta.env.VITE_REACT_APP_API_KEY; 
         const response = await axios.get(
           `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`
         );

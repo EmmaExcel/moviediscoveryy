@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
 
-const apiKey = "9e0c3276e2e68fecfe2ff22674628959";
+const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
 
 export const Featured = () => {
   const [movies, setMovies] = useState([]);

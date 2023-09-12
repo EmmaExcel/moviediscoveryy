@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiKey = '9e0c3276e2e68fecfe2ff22674628959';
+const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
 const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
 
 async function FetchM() {

@@ -6,7 +6,7 @@ import imdb from "../assets/imdd.svg"
 import Favourite from "../assets/Favorite.svg"
 import { Link } from "react-router-dom";
 
-const apiKey = "9e0c3276e2e68fecfe2ff22674628959";
+const apiKey =  import.meta.env.VITE_REACT_APP_API_KEY;
 
 const Card = ({ movie }) => {
   const [isclicked , setIsClicked] = useState(false);

@@ -11,7 +11,7 @@ import { Genres } from "../components/Card";
 import { FloatingMenu } from "../components/FloatingMenu";
 
 
-const apiKey = "9e0c3276e2e68fecfe2ff22674628959";
+const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
 
 const MovieDetail = () => {
 
