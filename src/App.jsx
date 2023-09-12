@@ -1,8 +1,7 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import FetchM from "./api/FetchM";
-import { Landing } from "./sections/Landing";
-import { Featured } from "./sections/Featured";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MovieDetail from "./sections/MovieDetails";
 import { Home } from "./sections/Home";
@@ -22,7 +21,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <span className="loader">...</span>;
   }
 
   return (
