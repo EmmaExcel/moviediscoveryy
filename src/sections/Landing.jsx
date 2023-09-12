@@ -37,20 +37,26 @@ export const Landing = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+
+  const backgroundStyle = {
+    background: `linear-gradient(rgba(0, 0, 0, 0.734), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center center",
+    backgroundRepeat: "no-repeat",
+    width: "100vw",
+    height: "100vh",
+    transition: "background-image 2s",
+   
+  };
+
   return (
     <>
       <section className="landingSection">
         <div
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            width: "100vw",
-            height: "90vh",
-            transition: "background-image 2s",
-          }}
+          style={backgroundStyle}
           className="landingContainer"
         >
+          
           <Navbar />
           <div className="landingMovieContainer">
             <div className="landingMovieInfo">
